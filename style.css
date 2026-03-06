@@ -366,6 +366,20 @@ color: #666;
 margin: 15px;
 }
 
+/* INSTAGRAM */
+
+.instagram-embed {
+text-align: center;
+padding: 20px;
+background: #f9f9f9;
+border-radius: 10px;
+}
+
+.instagram-embed p {
+margin-bottom: 20px;
+font-size: 18px;
+}
+
 /* ANIMATIONS */
 
 .fade-in {
@@ -593,51 +607,38 @@ font-size:28px;
 height:80vh;
 }
 
-.whatsapp-float {
-bottom: 15px;
-right: 15px;
-padding: 10px 14px;
-font-size: 14px;
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+.hero h2{
+font-size:24px;
 }
 
-.back-to-top {
-bottom: 70px;
-right: 15px;
-width: 45px;
-height: 45px;
-font-size: 18px;
+.hero p{
+font-size:16px;
 }
 
-/ *   S M A L L   M O B I L E   * / 
- 
- @ m e d i a ( m a x - w i d t h : 4 8 0 p x ) { 
- 
- . h e r o   h 2 { 
- f o n t - s i z e : 2 4 p x ; 
- } 
- 
- . h e r o   p { 
- f o n t - s i z e : 1 6 p x ; 
- } 
- 
- . b t n { 
- p a d d i n g : 1 2 p x   2 4 p x ; 
- f o n t - s i z e : 1 4 p x ; 
- } 
- 
- . s e c t i o n   h 2 { 
- f o n t - s i z e : 2 8 p x ; 
- } 
- 
- . g a l l e r y - g r i d   { 
- g r i d - t e m p l a t e - c o l u m n s :   r e p e a t ( a u t o - f i t ,   m i n m a x ( 1 5 0 p x ,   1 f r ) ) ; 
- g a p :   1 0 p x ; 
- } 
- 
- . g a l l e r y - i m g   { 
- h e i g h t :   1 2 0 p x ; 
- } 
- 
- } 
- 
- 
+.btn{
+padding:12px 24px;
+font-size:14px;
+}
+
+.section h2{
+font-size:28px;
+}
+
+.gallery-grid {
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 10px;
+}
+
+.gallery-img {
+height: 120px;
+}
+
+.testimonials-container {
+height: 250px;
+}
+
+}
