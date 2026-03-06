@@ -99,3 +99,67 @@ darkModeToggle.addEventListener('click', () => {
 document.body.classList.toggle('dark-mode')
 darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙'
 })
+
+// Testimonials slider
+
+let currentTestimonial = 0
+const testimonials = document.querySelectorAll('.testimonial')
+const prevBtn = document.querySelector('.prev')
+const nextBtn = document.querySelector('.next')
+
+function showTestimonial(index) {
+testimonials.forEach((t, i) => {
+t.classList.remove('active')
+if (i === index) t.classList.add('active')
+})
+}
+
+prevBtn.addEventListener('click', () => {
+currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length
+showTestimonial(currentTestimonial)
+})
+
+nextBtn.addEventListener('click', () => {
+currentTestimonial = (currentTestimonial + 1) % testimonials.length
+showTestimonial(currentTestimonial)
+})
+
+// Auto slide
+setInterval(() => {
+currentTestimonial = (currentTestimonial + 1) % testimonials.length
+showTestimonial(currentTestimonial)
+}, 5000)
+
+// Initialize
+showTestimonial(currentTestimonial)
+
+// Animated counters
+
+const counters = document.querySelectorAll('.counter')
+const speed = 200
+
+const animateCounters = () => {
+counters.forEach(counter => {
+const target = +counter.getAttribute('data-target')
+const count = +counter.innerText
+const inc = target / speed
+
+if (count < target) {
+counter.innerText = Math.ceil(count + inc)
+setTimeout(animateCounters, 1)
+} else {
+counter.innerText = target
+}
+})
+}
+
+// Trigger on scroll
+const statsSection = document.querySelector('#about')
+let animated = false
+
+window.addEventListener('scroll', () => {
+if (!animated && statsSection.getBoundingClientRect().top < window.innerHeight) {
+animateCounters()
+animated = true
+}
+})

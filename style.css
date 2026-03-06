@@ -37,7 +37,7 @@ font-weight:500;
 
 .hero{
 height:90vh;
-background:url("images/hero.jpg") center/cover no-repeat;
+background:url("images/hero.jpg") center/cover no-repeat fixed;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -104,6 +104,30 @@ font-size:32px;
 margin-bottom:25px;
 }
 
+/* STATS */
+
+.stats {
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+flex-wrap: wrap;
+}
+
+.stat {
+text-align: center;
+margin: 10px;
+}
+
+.stat h3 {
+font-size: 36px;
+color: #d4af37;
+margin-bottom: 5px;
+}
+
+.stat p {
+font-weight: 600;
+}
+
 /* MENU */
 
 .menu-grid{
@@ -137,19 +161,26 @@ cursor: pointer;
 
 /* TESTIMONIALS */
 
-.testimonials-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 20px;
-margin-top: 20px;
+.testimonials-container {
+position: relative;
+overflow: hidden;
+height: 200px;
 }
 
 .testimonial {
-background: white;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+opacity: 0;
+transform: translateX(100%);
+transition: all 0.5s ease;
 text-align: center;
+}
+
+.testimonial.active {
+opacity: 1;
+transform: translateX(0);
 }
 
 .testimonial p {
@@ -165,6 +196,27 @@ margin-bottom: 5px;
 .stars {
 color: #ffd700;
 font-size: 18px;
+}
+
+.testimonial-nav {
+text-align: center;
+margin-top: 20px;
+}
+
+.testimonial-nav button {
+background: #d4af37;
+color: black;
+border: none;
+padding: 10px 15px;
+margin: 0 5px;
+border-radius: 50%;
+cursor: pointer;
+font-size: 18px;
+transition: 0.3s;
+}
+
+.testimonial-nav button:hover {
+background: #c19a2b;
 }
 
 /* MAP */
@@ -271,6 +323,47 @@ width: 100%;
 height: 200px;
 object-fit: cover;
 cursor: pointer;
+}
+
+/* BLOG */
+
+.blog-posts {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+margin-top: 20px;
+}
+
+.blog-post {
+background: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.blog-post:hover {
+transform: translateY(-5px);
+}
+
+.blog-post img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+.blog-post h3 {
+padding: 15px 15px 5px;
+margin: 0;
+}
+
+.blog-post p {
+padding: 0 15px;
+color: #666;
+}
+
+.blog-post .btn {
+margin: 15px;
 }
 
 /* ANIMATIONS */
