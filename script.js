@@ -83,14 +83,6 @@ entry.target.classList.add('visible')
 
 fadeElements.forEach(el => observer.observe(el))
 
-// Loading screen
-
-window.addEventListener('load', () => {
-setTimeout(() => {
-document.getElementById('loading').classList.add('hide')
-}, 500)
-})
-
 // Dark mode toggle
 
 const darkModeToggle = document.getElementById('dark-mode-toggle')
@@ -162,4 +154,18 @@ if (!animated && statsSection.getBoundingClientRect().top < window.innerHeight) 
 animateCounters()
 animated = true
 }
+})
+
+// Cookie consent
+
+const cookieConsent = document.getElementById('cookie-consent')
+const acceptBtn = document.getElementById('accept-cookies')
+
+if (!localStorage.getItem('cookiesAccepted')) {
+cookieConsent.classList.remove('hide')
+}
+
+acceptBtn.addEventListener('click', () => {
+localStorage.setItem('cookiesAccepted', 'true')
+cookieConsent.classList.add('hide')
 })
