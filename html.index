@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Capella Bakery & Cafe</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<h1>Capella Bakery</h1>
+
+<nav>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h2>Delicious Desserts & Cozy Cafe Vibes</h2>
+
+<p>Fresh pastries, artisan coffee, and unforgettable flavors.</p>
+
+<a href="#menu" class="btn">View Menu</a>
+
+</div>
+
+</section>
+
+<section id="about" class="section">
+
+<h2>About Us</h2>
+
+<p>
+At Capella Bakery we craft fresh pastries, breads and desserts daily.
+Our cafe blends premium ingredients with cozy ambience to create a perfect
+place for coffee, conversations and sweet moments.
+</p>
+
+</section>
+
+<section id="menu" class="section menu">
+
+<h2>Popular Items</h2>
+
+<div class="menu-grid">
+
+<div class="item">
+<h3>Chocolate Cake</h3>
+<p>₹250</p>
+</div>
+
+<div class="item">
+<h3>Blueberry Cheesecake</h3>
+<p>₹320</p>
+</div>
+
+<div class="item">
+<h3>Cappuccino</h3>
+<p>₹180</p>
+</div>
+
+<div class="item">
+<h3>Butter Croissant</h3>
+<p>₹150</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+
+<h2>Visit Us</h2>
+
+<p>Mangalore, Karnataka</p>
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=mangalore&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Capella Bakery. All rights reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
