@@ -147,6 +147,28 @@ padding:20px;
 margin-top:50px;
 }
 
+/* WHATSAPP BUTTON */
+
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25d366;
+color: white;
+padding: 12px 16px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: 600;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+transition: 0.3s;
+z-index: 1000;
+}
+
+.whatsapp-float:hover {
+background: #128c7e;
+transform: scale(1.05);
+}
+
 /* MOBILE */
 
 @media(max-width:768px){
@@ -162,5 +184,12 @@ font-size:28px;
 
 .hero{
 height:80vh;
+}
+
+.whatsapp-float {
+bottom: 15px;
+right: 15px;
+padding: 10px 14px;
+font-size: 14px;
 }
 
