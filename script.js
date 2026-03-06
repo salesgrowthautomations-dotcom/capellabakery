@@ -77,6 +77,55 @@ modal.style.display = 'none'
 }
 })
 
+// Menu item modal
+
+const menuModal = document.getElementById('menu-modal')
+const menuCloseBtn = document.getElementById('menu-close')
+const menuItemName = document.getElementById('menu-item-name')
+const menuItemDescription = document.getElementById('menu-item-description')
+const menuItemPrice = document.getElementById('menu-item-price')
+
+document.querySelectorAll('.item').forEach(item => {
+item.addEventListener('click', () => {
+const name = item.getAttribute('data-name')
+const description = item.getAttribute('data-description')
+const price = item.getAttribute('data-price')
+
+menuItemName.textContent = name
+menuItemDescription.textContent = description
+menuItemPrice.textContent = price
+
+menuModal.style.display = 'block'
+})
+})
+
+menuCloseBtn.addEventListener('click', () => {
+menuModal.style.display = 'none'
+})
+
+menuModal.addEventListener('click', (e) => {
+if (e.target === menuModal) {
+menuModal.style.display = 'none'
+}
+})
+
+// Menu search
+
+const menuSearch = document.getElementById('menu-search')
+const menuItems = document.querySelectorAll('.item')
+
+menuSearch.addEventListener('input', () => {
+const query = menuSearch.value.toLowerCase()
+menuItems.forEach(item => {
+const name = item.getAttribute('data-name').toLowerCase()
+if (name.includes(query)) {
+item.style.display = 'block'
+} else {
+item.style.display = 'none'
+}
+})
+})
+
 // Fade-in animation on scroll
 
 const fadeElements = document.querySelectorAll('.fade-in')

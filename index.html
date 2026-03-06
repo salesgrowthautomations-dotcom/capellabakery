@@ -25,8 +25,10 @@
 
 <nav>
 <a href="#about">About</a>
+<a href="#offers">Offers</a>
 <a href="#menu">Menu</a>
 <a href="#testimonials">Testimonials</a>
+<a href="#events">Events</a>
 <a href="#gallery">Gallery</a>
 <a href="#instagram">Instagram</a>
 <a href="#contact">Contact</a>
@@ -45,6 +47,34 @@
 <p>Fresh pastries, artisan coffee, and unforgettable flavors.</p>
 
 <a href="#menu" class="btn">View Menu</a>
+
+</div>
+
+</section>
+
+<section id="offers" class="section offers fade-in">
+
+<h2>Special Offers</h2>
+
+<div class="offers-grid">
+
+<div class="offer">
+<h3>Weekend Brunch Deal</h3>
+<p>Enjoy our croissant platter with coffee for just ₹450. Valid Sat-Sun only.</p>
+<span class="offer-price">₹450</span>
+</div>
+
+<div class="offer">
+<h3>Birthday Cake Special</h3>
+<p>Custom cakes starting from ₹800. Free delivery within Mangalore.</p>
+<span class="offer-price">From ₹800</span>
+</div>
+
+<div class="offer">
+<h3>Loyalty Program</h3>
+<p>Buy 5 coffees, get the 6th free. Join our loyalty card program today!</p>
+<span class="offer-price">Free Coffee</span>
+</div>
 
 </div>
 
@@ -83,27 +113,31 @@ place for coffee, conversations and sweet moments.
 
 <h2>Popular Items</h2>
 
+<div class="menu-search">
+<input type="text" id="menu-search" placeholder="Search menu items...">
+</div>
+
 <div class="menu-grid">
 
-<div class="item">
+<div class="item" data-name="Chocolate Cake" data-price="₹250" data-description="Rich and moist chocolate cake with layers of chocolate ganache. Perfect for chocolate lovers.">
 <img src="images/redvelvet.jpg" alt="Chocolate Cake" class="menu-img">
 <h3>Chocolate Cake</h3>
 <p>₹250</p>
 </div>
 
-<div class="item">
+<div class="item" data-name="Blueberry Cheesecake" data-price="₹320" data-description="Creamy cheesecake topped with fresh blueberries and a graham cracker crust. A delightful treat.">
 <img src="images/dessert.jpg" alt="Blueberry Cheesecake" class="menu-img">
 <h3>Blueberry Cheesecake</h3>
 <p>₹320</p>
 </div>
 
-<div class="item">
+<div class="item" data-name="Cappuccino" data-price="₹180" data-description="Espresso with steamed milk and a layer of foam. A classic Italian coffee drink.">
 <img src="images/coffee.jpg (2).webp" alt="Cappuccino" class="menu-img">
 <h3>Cappuccino</h3>
 <p>₹180</p>
 </div>
 
-<div class="item">
+<div class="item" data-name="Butter Croissant" data-price="₹150" data-description="Flaky, buttery croissant baked fresh daily. Perfect with your morning coffee.">
 <img src="images/cafe.jpg" alt="Butter Croissant" class="menu-img">
 <h3>Butter Croissant</h3>
 <p>₹150</p>
@@ -120,21 +154,24 @@ place for coffee, conversations and sweet moments.
 <div class="testimonials-container">
 
 <div class="testimonial active">
-<p>"The best chocolate cake I've ever had! Fresh, delicious, and the service is top-notch."</p>
-<h4>- Priya S., Mangalore</h4>
+<p>"Their Christmas menu was amazingly curated, pretty much liked everything we tried from the Yuletide Chicken Pot Pie to the Jingle Berry Spritz and Noel Chocolate Yule Log. The Romesco Chicken Pasta was exceptionally good as well! Although the price point is at the higher end, the dishes left us on a satisfying note."</p>
+<h4>- Riya M., Mangalore</h4>
 <div class="stars">★★★★★</div>
+<div class="rating">Food: 5/5 | Service: 5/5 | Atmosphere: 4/5</div>
 </div>
 
 <div class="testimonial">
-<p>"Love their cappuccino – perfect blend of coffee and ambiance. A must-visit spot!"</p>
-<h4>- Rajesh K., Mangalore</h4>
+<p>"Loved the vibe here. The seating and atmosphere are super cozy, the kind of place where you can sit and talk for hours with a friend. The food was really good. The pasta felt authentic and different from the usual options, the sourdough open sandwich was delicious, and the baked potatoes were perfectly done. The tres leches dessert was light and not too sweet, and the hazelnut latte complemented everything really well."</p>
+<h4>- Sania R., Mangalore</h4>
 <div class="stars">★★★★★</div>
+<div class="rating">Food: 5/5 | Service: 5/5 | Atmosphere: 5/5</div>
 </div>
 
 <div class="testimonial">
-<p>"The croissants are heavenly! Fresh pastries every morning. Highly recommend."</p>
-<h4>- Anjali M., Mangalore</h4>
+<p>"We had a wonderful experience at Capella Cafe. We ordered pancakes, Turkish Eggs, Eggs Benedict, and an English breakfast - everything was really good. The pancakes were soft, fluffy, and delicious, with super yummy cream. The Turkish Eggs were rich and flavourful, while the Eggs Benedict was perfectly done with silky hollandaise sauce. All the beverages were equally good. Lovely food and pleasant ambience."</p>
+<h4>- Fedrix D., Mangalore</h4>
 <div class="stars">★★★★★</div>
+<div class="rating">Food: 5/5 | Service: 4/5 | Atmosphere: 5/5</div>
 </div>
 
 </div>
@@ -142,6 +179,32 @@ place for coffee, conversations and sweet moments.
 <div class="testimonial-nav">
 <button class="prev">‹</button>
 <button class="next">›</button>
+</div>
+
+</section>
+
+<section id="events" class="section events fade-in">
+
+<h2>Upcoming Events</h2>
+
+<div class="events-list">
+
+<div class="event">
+<h3>Bakery Workshop</h3>
+<p>Join us for a hands-on baking session. Learn to make our signature croissants!</p>
+<p><strong>Date:</strong> March 15, 2026 | <strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+<p><strong>Fee:</strong> ₹500 (includes materials and tasting)</p>
+<a href="https://wa.me/919876543210?text=Hi%20Capella%20Bakery!%20I%20want%20to%20register%20for%20the%20Bakery%20Workshop." class="btn" target="_blank">Register Now</a>
+</div>
+
+<div class="event">
+<h3>Coffee Tasting Evening</h3>
+<p>Explore different coffee blends from around the world. Free for all customers!</p>
+<p><strong>Date:</strong> March 22, 2026 | <strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+<p><strong>Fee:</strong> Free</p>
+<a href="#contact" class="btn">RSVP</a>
+</div>
+
 </div>
 
 </section>
@@ -278,6 +341,17 @@ src="https://maps.google.com/maps?q=Capella+Bakery,+Bejai+Church+Rd,+Kodialguttu
 <div id="image-modal" class="modal">
 <span class="close">&times;</span>
 <img class="modal-content" id="modal-img">
+</div>
+
+<!-- Menu Item Modal -->
+<div id="menu-modal" class="modal">
+<span class="close" id="menu-close">&times;</span>
+<div class="modal-content menu-modal-content">
+<h2 id="menu-item-name"></h2>
+<p id="menu-item-description"></p>
+<p id="menu-item-price"></p>
+<button class="btn">Order Now</button>
+</div>
 </div>
 
 <!-- Cookie Consent -->
