@@ -8,6 +8,7 @@ font-family:'Poppins',sans-serif;
 body{
 background:#fafafa;
 color:#222;
+scroll-behavior: smooth;
 }
 
 /* HEADER */
