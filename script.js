@@ -88,5 +88,14 @@ fadeElements.forEach(el => observer.observe(el))
 window.addEventListener('load', () => {
 setTimeout(() => {
 document.getElementById('loading').classList.add('hide')
-}, 1000)
+}, 500)
+})
+
+// Dark mode toggle
+
+const darkModeToggle = document.getElementById('dark-mode-toggle')
+
+darkModeToggle.addEventListener('click', () => {
+document.body.classList.toggle('dark-mode')
+darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙'
 })

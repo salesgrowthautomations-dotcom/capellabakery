@@ -322,6 +322,46 @@ opacity: 0;
 pointer-events: none;
 }
 
+/* DARK MODE */
+
+.dark-mode-toggle {
+background: none;
+border: none;
+font-size: 24px;
+cursor: pointer;
+margin-left: auto;
+transition: 0.3s;
+}
+
+.dark-mode-toggle:hover {
+transform: scale(1.1);
+}
+
+body.dark-mode {
+background: #222;
+color: #f9f9f9;
+}
+
+body.dark-mode header {
+background: #111;
+}
+
+body.dark-mode .item,
+body.dark-mode .testimonial,
+body.dark-mode .contact-form,
+body.dark-mode .reservation {
+background: #333;
+color: #f9f9f9;
+}
+
+body.dark-mode .newsletter {
+background: #333;
+}
+
+body.dark-mode footer {
+background: #111;
+}
+
 /* FOOTER */
 
 footer{
