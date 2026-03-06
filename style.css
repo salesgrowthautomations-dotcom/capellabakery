@@ -369,8 +369,8 @@ margin: 15px;
 /* ANIMATIONS */
 
 .fade-in {
-opacity: 0;
-transform: translateY(30px);
+opacity: 1;
+transform: translateY(0);
 transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -576,44 +576,6 @@ cursor: pointer;
 color: #bbb;
 }
 
-/* COOKIE CONSENT */
-
-.cookie-consent {
-position: fixed;
-bottom: 0;
-left: 0;
-width: 100%;
-background: #333;
-color: white;
-padding: 15px;
-text-align: center;
-z-index: 1001;
-}
-
-.cookie-consent p {
-margin: 0;
-display: inline;
-}
-
-.cookie-consent a {
-color: #d4af37;
-}
-
-.cookie-consent button {
-background: #d4af37;
-color: black;
-border: none;
-padding: 8px 16px;
-margin-left: 10px;
-border-radius: 5px;
-cursor: pointer;
-font-weight: 600;
-}
-
-.cookie-consent.hide {
-display: none;
-}
-
 /* MOBILE */
 
 @media(max-width:768px){
@@ -676,5 +638,6 @@ font-size: 18px;
  h e i g h t :   1 2 0 p x ; 
  } 
  
- }  
+ } 
+ 
  
