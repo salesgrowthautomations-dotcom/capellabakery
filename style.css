@@ -37,7 +37,7 @@ font-weight:500;
 
 .hero{
 height:90vh;
-background:url("https://images.unsplash.com/photo-1509440159596-0249088772ff") center/cover no-repeat;
+background:url("images/hero.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -120,6 +120,14 @@ border-radius:10px;
 box-shadow:0 6px 20px rgba(0,0,0,0.1);
 }
 
+.item img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 8px;
+margin-bottom: 15px;
+}
+
 /* MAP */
 
 .map iframe{
@@ -156,4 +164,3 @@ font-size:28px;
 height:80vh;
 }
 
-}
