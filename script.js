@@ -52,7 +52,7 @@ const modal = document.getElementById('image-modal')
 const modalImg = document.getElementById('modal-img')
 const closeBtn = document.getElementsByClassName('close')[0]
 
-document.querySelectorAll('.menu-img').forEach(img => {
+document.querySelectorAll('.menu-img, .gallery-img').forEach(img => {
 img.addEventListener('click', () => {
 modal.style.display = 'block'
 modalImg.src = img.src
@@ -67,4 +67,26 @@ modal.addEventListener('click', (e) => {
 if (e.target === modal) {
 modal.style.display = 'none'
 }
+})
+
+// Fade-in animation on scroll
+
+const fadeElements = document.querySelectorAll('.fade-in')
+
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible')
+}
+})
+}, { threshold: 0.1 })
+
+fadeElements.forEach(el => observer.observe(el))
+
+// Loading screen
+
+window.addEventListener('load', () => {
+setTimeout(() => {
+document.getElementById('loading').classList.add('hide')
+}, 1000)
 })
